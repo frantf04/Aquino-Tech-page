@@ -6,6 +6,9 @@ const main = document.querySelector(".main");
 const bar__menu = document.querySelector(".bar__menu");
 const arrow_up = document.querySelector(".arrow_up");
 const a_servicio = document.querySelector(".a_servicio");
+const myForm = document.querySelector(".myForm");
+
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -24,6 +27,41 @@ main.addEventListener("click", (() => {
   document.querySelector(".nav__movil").classList.remove("active")
 }));
 
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  fetch("https://formsubmit.co/ajax/frantf04@gmail.com", {
+      method: "POST",
+      body: new FormData(e.target)
+    })
+    .then(res => res.ok ? res.json() : promise.reject(res))
+    .then(json => {
+      console.log(json);
+      myForm.reset();
+      creatAlert('Mensaje enviado')
+
+    })
+    .catch(err => {
+      console.log(err);
+      let mensaje = err.statusText || "Ocurrio un error al enviar, intente nuevamente"
+      creatAlert(mensaje)
+      
+    })
+})
+
+/* -------------------------------------------------------------------------- */
+/*                                crear alerta                                */
+/* -------------------------------------------------------------------------- */
+
+function creatAlert(msg) {
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: msg,
+    showConfirmButton: false,
+    timer: 1500
+  })
+
+}
 
 /* -------------------------------------------------------------------------- */
 /*                     boton de ir arriba, echo con jquery                    */
@@ -63,12 +101,12 @@ let card2 = {
 
 /* -------------------------------- animcion -------------------------------- */
 let p_home = {
-    distance: "10px",
-    origin: "bottom",
-    duration: 500,
-    easing: "linear",
-    opacity: !1,
-    reset: !0
+  distance: "10px",
+  origin: "bottom",
+  duration: 500,
+  easing: "linear",
+  opacity: !1,
+  reset: !0
 };
 
 /* ----------- llamando animacion y aplicandola a elemento del dom ---------- */
@@ -81,4 +119,3 @@ ScrollReveal().reveal(".card2", card2);
 /* -------------------------------------------------------------------------- */
 /*                             Bienvenida con voz                             */
 /* -------------------------------------------------------------------------- */
-

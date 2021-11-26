@@ -27,42 +27,8 @@ main.addEventListener("click", (() => {
   document.querySelector(".nav__movil").classList.remove("active")
 }));
 
-myForm.addEventListener("submit", (e) => {
-  e.preventDefault()
 
-  fetch("https://formsubmit.co/ajax/frantf04@gmail.com", {
-      method: "POSt",
-      body: new FormData(e.target)
-    })
-    .then(res => res.ok ? res.json() : promise.reject(res))
-    .then(json => {
-      console.log(json);
-      myForm.reset();
-      creatAlert('Mensaje enviado','success')
 
-    })
-    .catch(err => {
-      console.log(err);
-      let mensaje = err.statusText || "Ocurrio un error al enviar, intente nuevamente"
-      creatAlert(mensaje, 'error')
-      
-    })
-})
-
-/* -------------------------------------------------------------------------- */
-/*                                crear alerta                                */
-/* -------------------------------------------------------------------------- */
-
-function creatAlert(msg,status) {
-  Swal.fire({
-    position: 'center',
-    icon: status,
-    title: msg,
-    showConfirmButton: false,
-    timer: 1700
-  })
-
-}
 
 /* -------------------------------------------------------------------------- */
 /*                     boton de ir arriba, echo con jquery                    */

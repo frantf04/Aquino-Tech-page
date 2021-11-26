@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/servicio.css">
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="/js/main.js"></script>
+  <script defer src="/js/form_sub.js"></script>
   <script src="/js/jquery.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -55,21 +56,28 @@
           <p>Tus datos se tratarán conforme a la información básica de protección expuesta en el formulario adjunto </p>
         </span>
       </div>
-      <form class="myForm"  name="myForm" id="myForm"
-        autocomplete="off"><input type="hidden" name="_subject"
-          value="Alguien ha solicitado una reparación a domicilio"><input type="hidden" name="_template"
-          value='box'><input type="hidden" name="_next" value="http://geekpcrd.com/thanks_sv.html"><input type="hidden"
-          name="_cc" value="bricaayaacaquino@gmail.com"><input type="hidden" name="_cc"
-          value="acaquino2011@gmail.com"><input type="hidden" name="_captcha" value="false"><input type="text"
-          name="nombre" id="nombre" placeholder="Nombre y apellido"><input type="text" name="telefono" id="telefono"
-          placeholder="Telefono de contacto"><input type="text" name="direccion" id="direccion"
-          placeholder="Dirección de recogida"><input type="text" name="localidad" id="localidad"
-          placeholder="Localidad"><input type="text" name="provincia" id="provincia" placeholder="Provincia"><label
-          for="dia-recogida">Dia de recogida</label><input type="date" name="dia-recogida" id="dia-recogida"
-          placeholder="Dia de recogida"><label for="hora">Hora de preferencia</label><select name="hora" id="hora">
+      <form class="myForm" name="myForm" id="myForm" autocomplete="off">
+        <input type="hidden" name="_subject" value="Alguien ha solicitado una reparación a domicilio">
+        <input type="hidden" name="_template" value='box'>
+        <input type="hidden" name="_next" value="http://geekpcrd.com/thanks_sv.html">
+        <input type="hidden" name="_cc" value="bricaayaacaquino@gmail.com">
+        <input type="hidden" name="_cc" value="acaquino2011@gmail.com">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- ----------------------------------------------------------------------- -->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
+        <input type="text" name="telefono" id="telefono" placeholder="Telefono de contacto" required>
+        <input type="text" name="direccion" id="direccion" placeholder="Dirección de recogida" required>
+        <input type="text" name="localidad" id="localidad" placeholder="Localidad" required>
+        <input type="text" name="provincia" id="provincia" placeholder="Provincia" required>
+        <label for="dia-recogida">Dia de recogida</label>
+        <input type="date" name="dia-recogida" id="dia-recogida" placeholder="Dia de recogida" required>
+        <label for="hora">Hora de preferencia</label>
+        <select name="hora" id="hora">
           <option value="de 10:00 a 14:00 h.">de 10:00 a 14:00 h.</option>
           <option value="de 14:00 a 19:00 h.">de 14:00 a 19:00 h.</option>
-        </select><label for="modelo"></label><select name="modelo" id="modelo">
+        </select>
+        <label for="modelo"></label>
+        <select name="modelo" id="modelo" >
           <option value="Iphone 3GS">Iphone 3GS</option>
           <option value="Iphone 4">Iphone 4</option>
           <option value=" Iphone 4S">Iphone 4S</option>
@@ -85,10 +93,13 @@
           <option value="Ipad pantalla retina">Ipad pantalla retina</option>
           <option value="Ipad Air">Ipad Air</option>
           <option value="Ipad mini 3">Ipad mini 3</option>
-        </select><label for="numserie">N° serie</label><input type="text" name="numserie" id="numserie"><label
-          for="descproblema">Describa el problema del dipositivo</label><textarea name="desc del problema"
-          id="descproblema" cols="30" rows="8"></textarea><button id="btn_enviar" type="submit"
-          class="btn-enviar">Enviar</button></form>
+        </select>
+        <label for="numserie">N° serie</label>
+        <input type="text" name="numserie" id="numserie" required>
+        <label for="descproblema">Describa el problema del dipositivo</label>
+        <textarea name="desc del problema" id="descproblema" cols="30" rows="8" required></textarea>
+        <button id="btn_enviar" type="submit" class="btn-enviar">Enviar</button>
+      </form>
     </div>
     <footer>
       <p>Copyright © 2021 Todo los derechos reservados | Página hecha y administrada con by Johan Olmos </p><span

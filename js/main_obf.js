@@ -29,21 +29,22 @@ main.addEventListener("click", (() => {
 
 myForm.addEventListener("submit", (e) => {
   e.preventDefault()
+
   fetch("https://formsubmit.co/ajax/frantf04@gmail.com", {
-      method: "POST",
+      method: "POSt",
       body: new FormData(e.target)
     })
     .then(res => res.ok ? res.json() : promise.reject(res))
     .then(json => {
       console.log(json);
       myForm.reset();
-      creatAlert('Mensaje enviado')
+      creatAlert('Mensaje enviado','success')
 
     })
     .catch(err => {
       console.log(err);
       let mensaje = err.statusText || "Ocurrio un error al enviar, intente nuevamente"
-      creatAlert(mensaje)
+      creatAlert(mensaje, 'error')
       
     })
 })
@@ -52,13 +53,13 @@ myForm.addEventListener("submit", (e) => {
 /*                                crear alerta                                */
 /* -------------------------------------------------------------------------- */
 
-function creatAlert(msg) {
+function creatAlert(msg,status) {
   Swal.fire({
     position: 'center',
-    icon: 'success',
+    icon: status,
     title: msg,
     showConfirmButton: false,
-    timer: 1500
+    timer: 1700
   })
 
 }

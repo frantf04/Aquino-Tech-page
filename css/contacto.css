@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(45deg, #267be9, #f15a24);
+}
+
+.main .container {
+  margin: auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+  .main .container {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main .container {
+    width: 100%;
+  }
+}
+
+.main .container .text-container {
+  width: 80%;
+  height: 100px;
+  margin: 5.5rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .main .container .text-container {
+    width: 100%;
+  }
+}
+
+.main .container .text-container h1 {
+  color: #fff;
+  text-shadow: 1px 1px 3px #f15a24;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.main .container .text-container p {
+  color: #fff8;
+}
+
+.main .container form {
+  width: 45%;
+  max-width: 90%;
+  min-height: 500px;
+  padding: 1rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+  .main .container form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main .container form {
+    padding: 0;
+  }
+}
+
+.main .container form input {
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: #f15a24 2px solid;
+  color: #fff;
+  outline: none;
+}
+
+.main .container form input::-webkit-input-placeholder {
+  color: #fff5;
+}
+
+.main .container form input:-ms-input-placeholder {
+  color: #fff5;
+}
+
+.main .container form input::-ms-input-placeholder {
+  color: #fff5;
+}
+
+.main .container form input::placeholder {
+  color: #fff5;
+}
+
+.main .container form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  height: 150px;
+  max-height: 170px;
+  margin: 1rem 0;
+  padding: .5rem;
+  background: transparent;
+  background: #fff5;
+  font-size: 1rem;
+  border: none;
+  border-bottom: #f15a24 2px solid;
+  outline: none;
+  color: #fff;
+}
+
+.main .container form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.main .container form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.main .container form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.main .container form textarea::placeholder {
+  color: #fff;
+}
+
+.main .container form .btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .container form .btn-container .btn-enviar {
+  text-align: center;
+  padding: .5rem 2rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.main .container .location {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .main .container .location {
+    margin: 1rem auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main .container .location {
+    width: 95%;
+  }
+}
+
+.main .container .location p {
+  margin: 1rem .5rem;
+  color: #fff6;
+}
+
+.main .container .location p span {
+  display: block;
+  font-size: 2rem;
+  color: #ccc;
+  text-shadow: 1px 1px 0px #f15a24;
+}
+
+.main footer {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #242424;
+  color: #fff;
+}
+/*# sourceMappingURL=contacto.css.map */

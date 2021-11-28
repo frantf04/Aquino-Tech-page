@@ -163,7 +163,7 @@ form {
           flex-direction: column;
   padding: 1rem;
   border-radius: .5rem;
-  background: linear-gradient(45deg, #f15a24, #267be9);
+  background: linear-gradient(45deg, #267be9, #f15a24);
   margin: 1rem auto;
 }
 
@@ -230,14 +230,17 @@ form select {
 }
 
 form textarea {
-  width: 100%;
-  min-width: 100%;
+  width: 90%;
+  min-width: 90%;
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
   padding: .5rem;
   outline: none;
   font-size: 14px;
+  background: #fff5;
+  border: none;
+  border-bottom: #f15a24 2px solid;
 }
 
 form .btn-enviar {

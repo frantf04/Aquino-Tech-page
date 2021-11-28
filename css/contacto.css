@@ -85,7 +85,7 @@ html, body {
 }
 
 .main .container .text-container p {
-  color: #fff8;
+  color: #fff;
 }
 
 .main .container form {
@@ -200,7 +200,6 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  border: 1px solid #fff;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -220,7 +219,7 @@ html, body {
 
 .main .container .location p {
   margin: 1rem .5rem;
-  color: #fff6;
+  color: #fff;
 }
 
 .main .container .location p span {

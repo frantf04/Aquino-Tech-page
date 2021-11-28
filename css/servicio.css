@@ -239,6 +239,7 @@ form textarea {
   outline: none;
   font-size: 14px;
   background: #fff5;
+  color: #fff;
   border: none;
   border-bottom: #f15a24 2px solid;
 }

@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
     display: none;
@@ -126,7 +126,7 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .header nav {
     display: none;
   }
@@ -420,20 +420,17 @@ body {
 
 .main .about__container {
   width: 100%;
-  min-height: 80vh;
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -442,27 +439,21 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .main .about__container {
-    height: 1px;
-    width: 100%;
-  }
-}
-
 .main .about__container img {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container img {
     width: 100%;
   }
 }
 
 .main .about__container .about {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,15 +467,15 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 2.5rem 1rem;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   background: #04091e;
   color: #fff;
   text-align: justify;
   font-size: 14px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .about {
     width: 100%;
     padding: 2.5rem 1rem;
@@ -495,7 +486,7 @@ body {
   padding-left: 2rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .about .cont-h2 {
     padding: 0;
   }
@@ -509,7 +500,7 @@ body {
   color: #777;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .about p {
     text-align: left;
   }
@@ -523,7 +514,7 @@ body {
   padding: 1rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .vision_mision_container {
     padding: 0;
   }
@@ -535,7 +526,7 @@ body {
   padding: 1rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .vision_mision_container .vision,
   .main .about__container .vision_mision_container .mision {
     padding: 10px 0;
@@ -548,7 +539,7 @@ body {
   color: #777;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .vision_mision_container .vision p,
   .main .about__container .vision_mision_container .mision p {
     text-align: justify;
@@ -562,7 +553,7 @@ body {
   margin: 20px 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .vision_mision_container .vision span,
   .main .about__container .vision_mision_container .mision span {
     margin: 0;
@@ -575,7 +566,7 @@ body {
   font-weight: 100;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .about__container .vision_mision_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -657,7 +648,7 @@ body {
   padding: 1rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .main .caracteristica .text-container .text_card {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -773,7 +764,7 @@ footer p {
   margin: 1rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
   .bar__menu {
     display: inline;
   }
@@ -808,7 +799,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1250px) {
   .nav__movil {
     display: none;
   }

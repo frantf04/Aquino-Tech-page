@@ -8,7 +8,7 @@ function _0x80ca(_0x5eb05e, _0x7b926e) {
 }
 
 function _0x3393() {
-  const _0x160909 = ['41652QlQLwz', 'Ocurrio\x20un\x20error\x20al\x20enviar,\x20intente\x20nuevamente', '3313565EdMUgy', 'fire', 'reject', 'https://formsubmit.co/ajax/frantf04@gmail.com', '37792WcSlCX', 'addEventListener', 'log', 'then', '1818POavfm', 'POSt', '2207552QoklzK', 'success', '1268928YJxteU', '4AYxYlP', 'catch', 'submit', 'preventDefault', 'reset', '8719515zLmlYq', '2210544aqesjO'];
+  const _0x160909 = ['41652QlQLwz', 'Ocurrio\x20un\x20error\x20al\x20enviar,\x20intente\x20nuevamente', '3313565EdMUgy', 'fire', 'reject', 'https://formsubmit.co/ajax/aquinotechdr@gmail.com', '37792WcSlCX', 'addEventListener', 'log', 'then', '1818POavfm', 'POSt', '2207552QoklzK', 'success', '1268928YJxteU', '4AYxYlP', 'catch', 'submit', 'preventDefault', 'reset', '8719515zLmlYq', '2210544aqesjO'];
   _0x3393 = function () {
     return _0x160909;
   };
